@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="container">   
+        <form class="form">
+            <h3>Enter your 4 digit OTP</h3>
+            <div class="input_feilds">
+                <input type="text" maxlength="1" class="otpinput"/>
+                <input type="text" maxlength="1"class="otpinput"/>
+                <input type="text" maxlength="1" class="otpinput"/>
+                <input type="text" maxlength="1" class="otpinput"/>
+            </div>
+            <button type="submit"><b>submit</b></button>
+        </form>
+    </div>
+  <script>
+    var myotp = document.querySelectorAll(".otpinput");
+    for(var i = 0; i<myotp.length;i++){
+        myotp[i].addEventListener("keyup",function(){
+            this.nextElementSibling.focus();
+        })
+    }
+  </script>
+</body>
+</html>
