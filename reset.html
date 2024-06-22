@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password reset form</title>
     <link rel="stylesheet" href="reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div>
         
-        <form action="">
+        <form action="post">
             <div class="container">
                 <h2>Reset Password</h2>
-                <label for="New-password">New Password <span style="color: orangered;">*</span></label>
-                <div><input type="password" required></div>
-                <label for="Confirm-password" class="spaced-label">Confirm Password <span style="color: orangered;">*</span></label>
-                <div><input type="password" required></div>
+                <label for="new-password">New Password <span style="color: orangered;">*</span></label>
+                <div class="space"><input type="password" id="new-password" name="new-password" required><i class='bx bxs-low-vision'></i></div>
+                <label for="confirm-password" >Confirm Password <span style="color: orangered;">*</span></label>
+                <div class="spaced-div"><input type="password" id="confirm-password" name="confirm-password" required ><i class='bx bxs-low-vision'></i></div>
                 <button type="submit">Reset Password</button>
             </div>
         </form>

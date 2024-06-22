@@ -27,18 +27,49 @@ body{
     width: 30vh;
     height: 4vh;
     font-size: 20px;
+    border: 15px;
+    border-radius: 15px;
+    
 }
 .container button{
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 50px;
     width: 31vh;
     height: 5vh;
     font-size:medium;
     cursor:pointer;
     color: #000;
+    border: 15px;
+    border-radius: 15px;
     
 }
 .container button:hover{
     background-color:#3213;
     border: none;
+}
+.spaced-div{
+    margin-top: 5px;
+}
+.space{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.space i{
+    position: relative;
+    right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+.spaced-div i{
+    position: relative;
+    right: 20px;
+    color: gray;
+    cursor: pointer;
+   
+}
+.space i:hover{
+    color: #000;
+}
+.spaced-div i:hover{
+    color: #000;
 }
