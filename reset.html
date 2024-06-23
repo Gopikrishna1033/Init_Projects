@@ -10,16 +10,37 @@
 <body>
     <div>
         
-        <form action="post">
+        <form method="post">
             <div class="container">
                 <h2>Reset Password</h2>
+                <label for="user-name">Username <span style="color: orangered;">*</span></label>
+                <div class="user"><input type="text" id="user-name" name="user-name" required></div>
                 <label for="new-password">New Password <span style="color: orangered;">*</span></label>
-                <div class="space"><input type="password" id="new-password" name="new-password" required><i class='bx bxs-low-vision'></i></div>
+                <div class="space"><input type="password" id="new-password" name="new-password" required><i class='bx bxs-low-vision' id="togglePassword"></i></div>
                 <label for="confirm-password" >Confirm Password <span style="color: orangered;">*</span></label>
-                <div class="spaced-div"><input type="password" id="confirm-password" name="confirm-password" required ><i class='bx bxs-low-vision'></i></div>
+                <div class="spaced-div"><input type="password" id="confirm-password" name="confirm-password" required ><i class='bx bxs-low-vision' id="toggleConfirmPassword"></i></div>
                 <button type="submit">Reset Password</button>
             </div>
         </form>
     </div>
+    <script>
+        // Function to toggle password visibility
+        function togglePasswordVisibility(toggleId, inputId) {
+            const toggleElement = document.querySelector(toggleId);
+            const inputElement = document.querySelector(inputId);
+            
+            toggleElement.addEventListener('click', function () {
+                // Toggle the type attribute
+                const type = inputElement.getAttribute('type') === 'password' ? 'text' : 'password';
+                inputElement.setAttribute('type', type);
+                // Toggle the eye slash icon
+                this.classList.toggle('fa-eye-slash');
+            });
+        }
+    
+        // Apply the function to both password fields
+        togglePasswordVisibility('#togglePassword', '#new-password');
+        togglePasswordVisibility('#toggleConfirmPassword', '#confirm-password');
+    </script>
 </body>
 </html>

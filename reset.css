@@ -26,9 +26,11 @@ body{
     margin-left:50px;
     width: 30vh;
     height: 4vh;
-    font-size: 20px;
+    font-size: 15px;
     border: 15px;
     border-radius: 15px;
+    direction: ltl;
+    text-indent: 10px;
     
 }
 .container button{
@@ -72,4 +74,8 @@ body{
 }
 .spaced-div i:hover{
     color: #000;
+}
+.user{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
