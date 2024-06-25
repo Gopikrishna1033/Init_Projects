@@ -9,38 +9,66 @@ body{
 .container{
     background-color:dimgray;
     width: 320px;
-    height: 250px;
+    height: auto;
     padding: 5px;
     border: 5px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 10px;
 }
 .user{
     margin-bottom: 5px;
 }
 .check{
-    margin-top: 5px;
-    margin-left: 20px;
+    margin-top: 10px;
+
+ 
+
 }
 .user input{
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 20px;
     border: 1px;
     width: 200px;
     margin-bottom: 5px;
+    padding: 10px;
+    margin-right: 15px;
 }
 .pass input{
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 20px;
     border: 1px;
     width: 200px;
+    padding: 10px;
 }
 button{
     margin-top: 10px;
-    width: 200px;
+    width: 210px;
     border: 1px;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px;
+    cursor:pointer;
+    text-align: center;
+    margin-right: 13px;
 }
-
+i{
+    position: relative;
+    right: 20px;
+    color:grey ;
+    cursor: pointer;
+}
+i:hover{
+    color: black;
+}
+button:hover{
+   background-color:darkgrey ;
+}
+.reset{
+    margin-left: 9px;
+    text-decoration: none;
+}
+.reset:hover{
+    color:black;
+}
 

@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login form</title>
     <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <form action="">
         <div class="container">
             <h2>Login</h2>
-            <div class="user"><input type="text" placeholder="Username"></div>
-            <div class="pass"><input type="password" placeholder="Password"></div>
-            <div class="check"><label><input type="checkbox">Remember me</label>
-                <a href="">Forgot password?</a></div>
+            <div class="user"><input type="text" placeholder="Username" required></div>
+            <div class="pass"><input type="password" placeholder="Password" required><i class='bx bxs-low-vision'></i></div>
+            <div class="check"><label><input type="checkbox" required>Remember me</label>
+                <a href="./reset.html" class="reset">Forgot password?</a></div>
             <button>Login</button>
             <div class="para"><p>Do you have an account? <a href="">sign up</a></p></div>
-            
         </div>
     </form>
+   
 </body>
 </html>
+
