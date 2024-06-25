@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <div> <label for="">Firstname <span style="color:orangered;">*</span></label>
+                <input type="text" required></div>
+           <div> <label for="">Lastname <span style="color: orangered;">*</span></label>
+            <input type="text"></div>
+            <div> <label for="">email <span style="color:orangered;">*</span></label>
+            <input type="email" required></div>
+                <div><label for="">Password</label><input type="password"></div>
+                <div><label for="">Confirm Password</label><input type="password"></div>
+                <div><label for="">Phone <span style="color: orangered;">*</span></label>
+                    <input type="tel" required pattern="[6-9][0-9]{9}"></div>
+                <div>
+                    <label for="">Gender</label>
+                    <select>
+                        <option value="">male</option>
+                        <option value="">Female</option>
+                        <option value="">others</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Date Of Birth</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="">Address</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">City</label>
+                    <input type="text">
+                </div>
+                <div><label for="">State</label><input type="text"></div>
+        </form>
+    </div>
+</body>
+</html>
