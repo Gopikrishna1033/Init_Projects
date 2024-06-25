@@ -71,4 +71,9 @@ button:hover{
 .reset:hover{
     color:black;
 }
-
+.container p a{
+    text-decoration: none;
+}
+.container p a:hover{
+    color:black;
+}
