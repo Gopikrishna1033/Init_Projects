@@ -4,40 +4,333 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web</title>
+    <link rel="stylesheet" href="./web_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <style>
-        *{
-            font-family:verdana ;
+        body{
+        font-family: verdana;
         }
-        nav{
-            background-color: grey;
-            display: flex;
-            height: 4rem;
+        a:hover{
+        color: white;
         }
-        a{
-            color:black;
-            text-decoration: none;
-            display: inline-block;
+        section{
+        width:100%;
+        height: 100vh;
+        background: url('https://wallpapercave.com/wp/wp2655670.jpg');
+        background-size: cover;
+        background-position: center;
         }
-        li{
-            list-style: none;
+        aside{
+        width:50%;
+        padding: 2rem;    
         }
-        label{
-            padding: 20px;
+ 
+        .search{
+        position: absolute;
+        top: 40%;
+        text-align: center;
+        background-color:lavender;
+        opacity: 0.7;
+        height: 210px;
+        width: 17vw;
+        box-shadow: 10px;
+        border: none;
+        border-radius: 10px;
         }
+        .from{
+        margin-top: 20px;
+        margin-bottom: 5px;
+        }
+        .to{
+        
+        margin-bottom: 5px;
+        }
+        .search input{
+        width:13rem;
+        height:2rem;
+        border:1px solid whitesmoke;
+        border-radius: 15px;
+        text-indent: 10px;
+        font-size: 17px;
+        }
+        .search input::placeholder{
+        padding: 5px;
+        font-size: medium;
+        }
+        .head3{
+                margin-top: 1rem;
+                
+            }
+        .bt{
+             width:13rem;
+             height:2rem;
+             border: none;
+             border-radius: 15px;
+             font-size: 17px;
+        }
+        .bt:hover{
+             cursor: pointer;
+             background-color: lightblue;
+        }
+        .rt{
+            background-color: burlywood;
+            border: none;
+            border-radius: 10px;
+            
+        }
+        .our{
+            bottom:80px;
+            border: 1px solid white;
+            border-radius: 25px;
+        }
+        .mt1{
+            margin-top: 87px;
+        }
+        .button{
+            cursor: pointer;
+        }
+        .box img:hover{
+            transform: scale(0.9);
+            transition: 0.2s ease-in-out;
+            
+        }
+       .bg-orange{
+        background-color: rgba(224, 79, 26, 0.875);
+       }
+       .h4img img{
+        margin-top: 50px;
+       }
+       .mt2{
+        margin-top: 50px;
+        background-color: floralwhite;
+        
+       }
+       article h2{
+        padding: 10px;
+        margin-left: 20px;
+       }
+       span i{
+        color:white;
+        font-size: 50px;
+       }
+       .font{
+        color:gray;
+        margin-top: 10px;
+       }
+       span p{
+        float:right;
+       }
+      
     </style>
 </head>
 <body>
-    <nav>
-        <label for="logo">Logo</label>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="login.html">Home</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <label for="logo" class="navbar-brand">logo</label>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Bus</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Train</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Flight</i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cab</i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Rental</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        </ul>
-    </nav>
-
-   
+    <section>
+       
+    </section>
+    <aside>
+        <div class="search">
+            <form action="search.html" method="post">
+                <h3 class="head3">Book Your tickets</h3>
+                <div class="from"><input type="text" name="from" placeholder="From"></div>
+                <div class="to"><input type="text" name="to"  placeholder="To"></div>
+                <div><button class="badge badge-pill badge-light bt">Search</button></div>
+            </form>
+        </div>
+    </aside>
+    <div class="container button ">
+        <div class="row" >
+            <div class="col-11 bg-dark text-white text-center py-3 our">
+                <marquee behavior="" direction="right"><h2>Our Services!</h2></marquee>
+            </div>
+        </div>
+        <div class="row mt-1 ">
+            <div class="col-3 rt our " >
+                <h2>Rental Services</h2>
+                <ul>
+                    <li>Car</li>
+                    <li>Bike</li>
+                    <li>Bicycle</li>
+                </ul>
+            </div>
+            <div class="col-4 rt ml-1 our">
+                <h2>LDT Service</h2>
+                <ul>
+                    <li>Bus</li>
+                    <li>Train </li>
+                    <li>Flight </li>
+                </ul>
+            </div>
+            <div class="col-4 rt ml-1 our">
+                <h2>Holiday Plan</h2>
+                <ul>
+                    <li>guidance about the city</li>
+                    <li>Making your trip easy</li>
+                    <li>Special Holiday Packages</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   <div class="container mb-5 button">
+    <div class="row">
+        <div class="col6 ml-5 box">
+            <h2>Offers</h2>
+            <p>Get best deals with offers</p>
+            <img src="./launches_bus_banner.jpg" alt="" width="500px">
+        </div>
+        <div class="col6 ml-2 mt1 box">
+            <img src="./train-tickets-offers.jpg" alt="" width="500px" height="258px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col6 mt-1 ml-5 box">
+            <img src="./flight.jpg" alt="" width="500px" height="250px">
+        </div>
+        <div class="row ml-2 mt-1 box">
+            <img src="./CabPass.jpg" alt="" width="500px" height="
+            250px">
+        </div>
+    </div>
+   </div>
+<!-- government buses carousel inser here -->
+ <div class="container">
+    <div class="row bg-light">
+        <div class="col4 h4img mt-2 ml-2">
+            <h4>For easy booking download the app </h4>
+            <ul class="mt-5">
+                <li>Quick Acess</li>
+                <li>Live tracking</li>
+                <li>Easy Booking</li>
+            </ul>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.tyafX8l5LiySmMs7o4gvQQHaCj&pid=Api&P=0&h=180" alt="" class="button" width="200px">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.ZgivgsBKdCd-Qb_hazm-8wHaCM&pid=Api&P=0&h=180" alt="" class="button" width="200px">
+        </div>
+        <div class="col-5 ml-5 mt-3">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.clzl3nK9umlRktKV2Mt71AHaHx&pid=Api&P=0&h=180" alt="" width="250px">
+        </div>
+    </div>
+ </div>
+<article class="mt2">
+    <div>
+        <h2>Frequently Asked Questions..</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div><b>Q-How can i book my bus tickets?</b> </div>
+                <div>
+                    A-You can  download the bus tickets by simply going to official website or downloading our app at playstore or app store and at the top you can see the bus image click it and enter yor source and destination and make payment. 
+                </div>
+            </div>
+            <div class="col-6">
+                <div><b>Q-How can i book my train tickets?</b> </div>
+                <div>
+                    A-You can  download the train tickets by simply going to official website or downloading our app at playstore or app store and at the top you can see the train image click it and enter yor source and destination and make payment. 
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div><b>Q-How can i book my cab tickets?</b> </div>
+                <div>
+                    A-You can  download the cab tickets by simply going to official website or downloading our app at playstore or app store and at the top you can see the car image click it and enter yor source and destination and make payment. 
+                </div>
+            </div>
+            <div class="col-6">
+                <div><b>Q-How can i book my flight tickets?</b> </div>
+                <div>
+                    A-You can  download the flight tickets by simply going to official website or downloading our app at playstore or app store and at the top you can see the flight image click it and enter yor source and destination and make payment. 
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div><b>Q-How can i Activate my Rental services?</b> </div>
+                <div>
+                    A-You can activate your rental servives by clicking on rental services on top after downloading the app and select your vehicle that wish to rent and then submit the necessary douments and make payment. 
+                </div>
+            </div>
+            <div class="col-6">
+                <div><b>Q-How can i avail my gift cards?</b> </div>
+                <div>
+                    A-You can  avail the gift cards by creating a account in our app and then go to the avail gift cards at bottom of the page click it and avai your cards.
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<footer style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 font">
+                <div><h4>Frequent Bookings</h4></div>
+                <ul>
+                    <li>Hyderabad</li>
+                    <li>Chennai</li>
+                    <li>Kerala</li>
+                    <li>Tirupati</li>
+                    <li>Bangalore</li>
+                </ul>
+            </div>
+            <div class="col-4 font">
+                <div><h4>Holiday visits</h4></div>
+                <ul>
+                    <li>Goa</li>
+                    <li>Ooty</li>
+                    <li>Munnar</li>
+                    <li>Mysore</li>
+                    <li>Kodaikanal</li>
+                </ul>
+            </div>
+            <div class="col-4 font">
+                <div><h4>Holistic Visits</h4></div>
+                <ul class="list-item">
+                    <li class="">Tirupati</li>
+                    <li>Madurai</li>
+                    <li>Shiridi</li>
+                    <li>Kedarnath</li>
+                    <li>Dwaraka</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <span><a href="#"><i class='bx bxl-twitter'></i></a></span>
+    <span><a href="#"><i class='bx bxl-instagram' ></i></a></span>
+    <span><a href="#"><i class='bx bxl-facebook' ></i></a></i></span>
+    <span><p style="color: grey;">any quires drop a mail:
+        <a href="#" style="text-decoration: none;">travel7@gmail.com</a>
+    </p></span>
+</footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvPtKmw39oCRDL+GzG2S/P2eAiw9GY6O2O2Zhs5p0Riq6a0UeUJxUxpz39IpL8b" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-vkRkmK2PYPufr55JcL2FQZScGiAe8lkF5g1xSh3QqXRs0lN3sx9Vxe8FQq67L8az" crossorigin="anonymous"></script>
 </html>

@@ -1,0 +1,35 @@
+/* nav{
+    background-color:lightgrey;
+    opacity:0.7;
+    box-sizing: border-box;
+    height: 5rem;
+}
+nav label{
+    padding:2rem;
+    line-height:75px;
+}
+nav ul{
+    display: flex;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    line-height: 45px;
+    margin:  0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+} */
+
+/* button{
+    width:13rem;
+    height:2rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: lightblue;
+} */

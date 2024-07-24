@@ -6,13 +6,114 @@
     <title>Password reset form</title>
     <link rel="stylesheet" href="reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>  
+        section img{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;      
+        }
+        .contain h2{
+            margin-left: 10px;
+        }
+        .contain label{
+            color: aliceblue;
+            margin-left: 10px;
+        }
+        .contain{
+            border: 1px solid white;
+            width: 300px;
+            border-radius: 20px;
+        }
+        .contain{
+        margin-left: 565px;
+        height: auto;
+        padding: 10px;
+        position: absolute;
+        top: 35%;
+        justify-content: center;
+        align-content: center;
+        display: block;
+        }
+        .contain input{
+        font-size: 16px;
+        border-radius: 20px;
+        border: 1px;
+        width: 200px;
+        margin-bottom: 5px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 15px;
+        }
+        .contain button{
+            width: 150px;
+            margin-left: 15px;
+            margin-top: 5px;
+        height: 5vh;
+        font-size:medium;
+        cursor:pointer;
+        color: #000;
+        border: 15px;
+        border-radius: 15px;
+        
+    }
+    .contain button:hover{
+    background-color:#3213;
+    border: none;
+}
+        .space i{
+        position: relative;
+        right: 40px;
+        color:black ;
+        cursor: pointer;
+        }
+        .space i:hover{
+            color: grey;
+        }
+        .spaced-div i{
+            position: relative;
+            right: 40px;
+            color:black ;
+            cursor: pointer;
+        }
+        .spaced-div i:hover{
+            color: grey;
+        }
+        span i{
+        color:white;
+        font-size: 50px;
+       }
+       .font{
+        color:gray;
+        margin-top: 10px;
+       }
+       span p{
+        float:right;
+       }
+    </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+            <label for="logo" class="navbar-brand">logo</label>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Bus</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Train</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Flight</i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Car</i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Rental</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="https://miaftercare.org/assets/images/background.jpg" alt="">
+    </section>
     <div>
-        
         <form method="post">
-            <div class="container">
-                <h2>Reset Password</h2>
+            <div class="contain">
+                <h2 style="color: aliceblue;">Reset Password</h2>
                 <label for="user-name">Username <span style="color: orangered;">*</span></label>
                 <div class="user"><input type="text" id="user-name" name="user-name" required></div>
                 <label for="new-password">New Password <span style="color: orangered;">*</span></label>
@@ -23,6 +124,48 @@
             </div>
         </form>
     </div>
+     <footer style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 font">
+                    <div><h4>Frequent Bookings</h4></div>
+                    <ul>
+                        <li>Hyderabad</li>
+                        <li>Chennai</li>
+                        <li>Kerala</li>
+                        <li>Tirupati</li>
+                        <li>Bangalore</li>
+                    </ul>
+                </div>
+                <div class="col-4 font">
+                    <div><h4>Holiday visits</h4></div>
+                    <ul>
+                        <li>Goa</li>
+                        <li>Ooty</li>
+                        <li>Munnar</li>
+                        <li>Mysore</li>
+                        <li>Kodaikanal</li>
+                    </ul>
+                </div>
+                <div class="col-4 font">
+                    <div><h4>Holistic Visits</h4></div>
+                    <ul class="list-item">
+                        <li class="">Tirupati</li>
+                        <li>Madurai</li>
+                        <li>Shiridi</li>
+                        <li>Kedarnath</li>
+                        <li>Dwaraka</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span><a href="#"><i class='bx bxl-twitter'></i></a></span>
+        <span><a href="#"><i class='bx bxl-instagram' ></i></a></span>
+        <span><a href="#"><i class='bx bxl-facebook' ></i></a></i></span>
+        <span><p style="color: grey;">any quires drop a mail:
+            <a href="#" style="text-decoration: none;">travel7@gmail.com</a>
+        </p></span>
+    </footer>
     <script>
         // Function to toggle password visibility
         function togglePasswordVisibility(toggleId, inputId) {

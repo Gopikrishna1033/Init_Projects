@@ -4,86 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
-        .mydiv{
-            position:fixed;
-            margin-left: 70vh;
-            margin-top: ;
-            margin-right: 50vh;
-            background-color: grey;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 1000px; /* Adjust the max-width as needed */
-            width: 100%; /* Responsive width */
+        .sign{
+            background-image: url("https://1.bp.blogspot.com/-lEkKXlY9MAY/X0Oo5GbqtxI/AAAAAAAANYo/6tdAM0INRTotwAodf_g4goiT0YxGjccuwCLcBGAsYHQ/s1600/20200823_225751_compress50.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
         }
-        .but{
-            display: block;
-            margin-top:10pxpx ;
-            margin-left: 50px;
-            border: 1px;
-            border-radius: 10px;
-            font-size: 15px;
-            width: 10vw;
-            height:5vh;
-        }
-        .but:hover{
-            background-color:  lightgray;
-        }
-        .form-group{
-            
-        }
-        
-   
+       .move{
+        position: absolute;
+        top: 30%;
+        margin-left: 500px;
+        border:none;
+       }
+
+        span i{
+        color:white;
+        font-size: 50px;
+       }
+       .font{
+        color:gray;
+        margin-top: 10px;
+       }
+       span p{
+        float:right;
+       }   
+       section img{
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+       } 
     </style>
 </head>
-<body style="background-color: grey;">
-    <marquee behavior="" direction=" left">Enter your details to go further</marquee>
-    <div class="mydiv">
-        <form action="">
-            <div class="form-group row"> <label for="firstname" class="col-sm-2 col-form-label">Firstname</label>
-                <input type="text" class="form-control col-sm-3" id="firstname" required>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <label for="logo" class="navbar-brand">logo</label>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Bus</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Train</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Flight</i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Car</i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Rental</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+    <section class="sign"></section>
+    <div class="move">
+        <form method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="username" style="color: aliceblue;">Unsername</label>
+                    <input type="text" class="form-control " id="username">
+                  </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4" style="color: aliceblue;">Email</label>
+                <input type="email" class="form-control " id="inputEmail4" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+              </div>
             </div>
-           <div class="form-group row"> <label for="lastname" class="col-sm-2">Lastname </label>
-                <input type="text" class="form-control col-sm-3"
-                id="lastname" required>
-            </div>
-            <div class="form-group row"> <label for="email" class="col-sm-2">Email</label>
-                <input type="email" required class="form-control col-sm-3" id="email">
-            </div>
-                <div class="form-group row"><label for="password" class="col-sm-2">Password</label>
-                    <input type="password" class="form-control col-sm-3" id="password">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4" style="color: aliceblue;">Password</label>
+                    <input type="password" id="inputPassword4" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
                 </div>
-                <div class="form-group row"><label for="confirm-password" class="col-sm-2">Confirm Password</label>
-                    <input type="password" class="form-control col-sm-3" id="confirm-password">
+                <div class="form-group col-md-6">
+                    <label for="Confirm" style="color: aliceblue;">Confirm Password</label>
+                    <input type="password" class="form-control" id="Confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                 </div>
-                <div class="form-group row"><label for="phone" class="col-sm-2">Phone <span style="color: orangered;">*</span></label>
-                    <input type="tel" required pattern="[6-9][0-9]{9}" class="form-control col-sm-3" id="phone"></div>
-                <div class="form-group row">
-                    <label for="gender" class="col-sm-2">Gender</label>
-                    <select class="col-sm-1 form-control" id="gender">
-                        <option value="">male</option>
-                        <option value="">Female</option>
-                        <option value="">others</option>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phone" style="color: aliceblue;">Mobile</label>
+                    <input type="text" pattern="[6-9]{1}[0-9]{9}" class="form-control">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="gender" style="color: aliceblue;">Gender</label>
+                    <select id="gender" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
                     </select>
                 </div>
-                <div class="form-group row">
-                    <label for="dob" class="col-sm-2">Date Of Birth</label>
-                    <input type="date" class="col-sm-3 form-control" id="dob">
-                </div>
-                <div class="form-group row">
-                    <label for="address" class="col-sm-2">Address</label>
-                    <input type="text" class="col-sm-3 form-control" id="address">
-                </div>
-                <div class="form-group row">
-                    <label for="city" class="col-sm-2">City</label>
-                    <input type="text" class="form-control col-sm-3" id="city">
-                </div>
-                <div class="form-group row"><label for="" class="col-sm-2">State</label><input type="text" class="form-control col-sm-3"></div>
-                <div>
-                    <button type="submit" class="but">Submit</button>
-                </div>
-        </form>
+            </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
     </div>
+    <footer style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 font">
+                    <div><h4>Frequent Bookings</h4></div>
+                    <ul>
+                        <li>Hyderabad</li>
+                        <li>Chennai</li>
+                        <li>Kerala</li>
+                        <li>Tirupati</li>
+                        <li>Bangalore</li>
+                    </ul>
+                </div>
+                <div class="col-4 font">
+                    <div><h4>Holiday visits</h4></div>
+                    <ul>
+                        <li>Goa</li>
+                        <li>Ooty</li>
+                        <li>Munnar</li>
+                        <li>Mysore</li>
+                        <li>Kodaikanal</li>
+                    </ul>
+                </div>
+                <div class="col-4 font">
+                    <div><h4>Holistic Visits</h4></div>
+                    <ul class="list-item">
+                        <li class="">Tirupati</li>
+                        <li>Madurai</li>
+                        <li>Shiridi</li>
+                        <li>Kedarnath</li>
+                        <li>Dwaraka</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span><a href="#"><i class='bx bxl-twitter'></i></a></span>
+        <span><a href="#"><i class='bx bxl-instagram' ></i></a></span>
+        <span><a href="#"><i class='bx bxl-facebook' ></i></a></i></span>
+        <span><p style="color: grey;">any quires drop a mail:
+            <a href="#" style="text-decoration: none;">travel7@gmail.com</a>
+        </p></span>
+    </footer>
 </body>
 </html>

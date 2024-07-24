@@ -1,12 +1,12 @@
-body{
+/* body{
     background-color:grey ;
     justify-content: center;
     align-items: center;
     display: flex;
     height: 100vh;
     margin: 0px;
-}
-.container{
+} */
+/* .container{
     background-color:dimgray;
     width: 320px;
     height: auto;
@@ -77,3 +77,4 @@ button:hover{
 .container p a:hover{
     color:black;
 }
+ */
